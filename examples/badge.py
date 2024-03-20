@@ -14,7 +14,7 @@ NAME_HEIGHT = 48
 TEXT_WIDTH = 295
 
 COMPANY_TEXT_SIZE = 0.6
-DETAILS_TEXT_SIZE = 0.5
+DETAILS_TEXT_SIZE = 0.6
 
 LEFT_PADDING = 5
 NAME_PADDING = 20
@@ -83,7 +83,9 @@ def draw_badge():
     # Draw the name, scaling it based on the available width
     display.set_pen(0)
     display.set_font("sans")
+    #display.set_font("bitmap8")
     name_size = 2.0  # A sensible starting scale
+    
     while True:
         name_length = display.measure_text(name, name_size)
         if name_length >= (TEXT_WIDTH - NAME_PADDING) and name_size >= 0.1:
@@ -100,6 +102,7 @@ def draw_badge():
     # Draw the first detail's title and text
     display.set_pen(0)
     display.set_font("sans")
+    #display.set_font("bitmap8")
     name_length = display.measure_text(detail1_title, DETAILS_TEXT_SIZE)
     display.text(detail1_title, LEFT_PADDING, HEIGHT - ((DETAILS_HEIGHT * 3) // 2), WIDTH, DETAILS_TEXT_SIZE)
     #display.text(detail1_text, 5 + name_length + DETAIL_SPACING, HEIGHT - ((DETAILS_HEIGHT * 3) // 2), WIDTH, DETAILS_TEXT_SIZE)
