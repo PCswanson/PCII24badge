@@ -12,5 +12,7 @@ Along with your name, school, and position, your badge comes with a few built in
 4. To return the badge to it's original screen, just select the "Badge" app.
 
 ## Hacking your Badge
-Do you want to hack your badge so that it contains different information or even operates in an entirely different way? Here is what you need to know.
+If you can, attend [Session 1A: Programming Your Badger](https://tenthannualinnovationinstit2024.sched.com/event/1T3we/session-1a-programming-your-badger) where we will learn the basics of how the code in the badge works and how you can modify it. In case you can't make it to the session, or if you want to dive in and learn more after the Institute is over, start with [Pimoroni's Getting Started with Badger 2040](https://learn.pimoroni.com/article/getting-started-with-badger-2040) guide. With a little Python knowlede, you can program the badge to do amazing things!
+This Github repository contains the code saved your badge (except for your personalized name and school) in case you mess something on your actuall badge and need to start over. 
+
 
