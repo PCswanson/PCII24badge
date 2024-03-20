@@ -108,7 +108,10 @@ def draw_badge():
     name_length = display.measure_text(detail2_title, DETAILS_TEXT_SIZE)
     display.text(detail2_title, LEFT_PADDING, HEIGHT - (DETAILS_HEIGHT // 2), WIDTH, DETAILS_TEXT_SIZE)
     #display.text(detail2_text, LEFT_PADDING + name_length + DETAIL_SPACING, HEIGHT - (DETAILS_HEIGHT // 2), WIDTH, DETAILS_TEXT_SIZE)
-
+    
+    display.line(1,	HEIGHT - DETAILS_HEIGHT * 2, 295, HEIGHT - DETAILS_HEIGHT * 2)
+    display.line(295,0,295,127)
+    
     display.update()
 
 
